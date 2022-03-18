@@ -7,13 +7,16 @@ public class Circle implements Shape{
     double radius;
     String color;
 
-    public Circle(double centerX, double centerY, double radius, String color){
+    public Circle(String color, double radius, double centerX, double centerY){
         this.centerX = centerX;
         this.centerY = centerY;
         this.radius = radius;
         this.color = color;
     }
 
+    public double diameter(){
+        return radius * 2;
+    }
 
     @Override
     public double area() {
@@ -22,11 +25,12 @@ public class Circle implements Shape{
 
     @Override
     public double perimeter() {
-        return 0;
+        return 2 * radius * Shape.PI;
+        //return 2 * radius * Math.PI;
     }
 
     @Override
     public String getColor() {
-        return null;
+        return color;
     }
 }

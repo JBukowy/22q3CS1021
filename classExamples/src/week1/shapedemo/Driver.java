@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 
 public class Driver {
-    public static double sumAreas(ArrayList<Shape> shapes) {
+    /*public static double sumAreas(ArrayList<Shape> shapes) {
         double totalArea = 0.0;
         for(int i = 0; i < shapes.size(); i++) {
             Shape shape = shapes.get(i);
@@ -48,5 +48,5 @@ public class Driver {
 
         double totalArea = sumAreas(shapes);
         System.out.println("The total area of the shapes is: " + totalArea);
-    }
+    }*/
 }
