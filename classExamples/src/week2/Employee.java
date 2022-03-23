@@ -9,10 +9,10 @@ public class Employee extends Person{
         this.id = id;
     }
 
+    @Override
     public void display(){
-        System.out.println("The employee name is: " + super.name);
+        super.display();
         System.out.println("The employee id is: " + this.id);
-
     }
 
 }

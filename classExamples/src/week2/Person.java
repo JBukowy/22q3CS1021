@@ -1,6 +1,6 @@
 package week2;
 
-public class Person {
+public abstract class Person {
     protected String name;
 
     Person(String name){
@@ -10,4 +10,10 @@ public class Person {
     public String getName() {
         return name;
     }
+
+    public void display(){
+        System.out.println("The employee name is: " + this.name);
+    }
+
+    abstract void makeMoney();
 }
