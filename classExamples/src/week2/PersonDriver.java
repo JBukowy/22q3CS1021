@@ -4,13 +4,20 @@ public class PersonDriver {
 
     public static void main(String[] args) {
 
-        Person p1 = new Person("John");
-        Employee e1 = new Employee("Zach", 1);
-        Person e2 = e1;
+        Employee e1 = new Employee("John");
+        Employee e2 = new Employee("Zach");
+        Employee e3 = new Employee("Cody");
+        Employee e4 = new Employee("John");
 
-        //p1.display();
+        /*e1.display();
         e2.display();
-        System.out.println(e2);
+        e3.display();*/
+
+        //System.out.println(e1);
+
+        System.out.println(e1.equals(e2));
+        System.out.println(e1.equals(e4));
+
 
 
     }

@@ -1,6 +1,6 @@
 package week2;
 
-public abstract class Person {
+public class Person {
     protected String name;
 
     Person(String name){
@@ -14,6 +14,4 @@ public abstract class Person {
     public void display(){
         System.out.println("The employee name is: " + this.name);
     }
-
-    abstract void makeMoney();
 }
