@@ -17,7 +17,7 @@ public class LeahDriver extends Application {
 
         Label leah = new Label("Hi, I am Leah the Label!");
         Label larry = new Label("Hi, I am larry the label - Leah's twin.");
-        leah.setAlignment(Pos.CENTER);
+        leah.setAlignment(Pos.CENTER_LEFT);
 
         Button clickMe = new Button("Click me!");
 
