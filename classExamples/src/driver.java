@@ -1,9 +1,24 @@
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 public class driver {
     public static void main(String[] args) {
-        int i = 2;
-        double x = 4;
-        char c = 'T';
+        File file = new File("alphabet.txt");
+        PrintWriter printer = null;
 
-        System.out.println(c+i);
+
+        try{
+            printer = new PrintWriter(file);
+            for(int i = 97; i < 97+26; i++){
+                printer.println((char)i);
+            }
+        }catch(IOException e){
+            System.out.println("There was an error writing to the file.");
+        }finally{
+            if(printer!=null){
+                printer.close();
+            }
+        }
     }
 }
